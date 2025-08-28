@@ -2,6 +2,7 @@
 
 import React from 'react';
 import ScrollAnimation from './ScrollAnimation';
+import { getDonationLink } from '../config/env';
 
 const DonationButtons: React.FC = () => {
   // Placeholder links - estos se reemplazarán con los links reales de Kiire
@@ -45,10 +46,16 @@ const DonationButtons: React.FC = () => {
   ];
 
   const handleDonation = (amount: number) => {
-    // Placeholder - aquí se redirigirá a Kiire
-    console.log(`Redirigiendo a Kiire para donación de ${amount} COP`);
-    // TODO: Reemplazar con link real de Kiire
-    alert(`Próximamente: Redirigiendo a Kiire para donación de ${amount.toLocaleString()} COP`);
+    const donationLink = getDonationLink(amount);
+    
+    if (donationLink && donationLink !== '#') {
+      // Redirigir a la URL de donación
+      window.open(donationLink, '_blank', 'noopener,noreferrer');
+    } else {
+      // Fallback si no hay URL configurada
+      console.log(`Redirigiendo a Kiire para donación de ${amount} COP`);
+      alert(`Próximamente: Redirigiendo a Kiire para donación de ${amount.toLocaleString()} COP`);
+    }
   };
 
   return (

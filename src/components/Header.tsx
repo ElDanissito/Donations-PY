@@ -19,7 +19,7 @@ const Header: React.FC = () => {
                              <span className="text-white font-bold text-xl">🎓</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-white leading-tight">Donaciones PY</span>
+              <span className="text-xl font-bold text-white leading-tight">Donaciones TG</span>
                              <span className="text-xs text-purple-300 font-medium">Sistema de delivery con drones</span>
             </div>
           </div>

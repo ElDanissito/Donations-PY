@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import ScrollAnimation from './ScrollAnimation';
+import { getQRUrl } from '../config/env';
 
 const QRDonation: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -64,7 +65,7 @@ const QRDonation: React.FC = () => {
                       <div className="text-center relative z-10">
                         <div className="w-40 h-40 bg-gradient-to-br from-gray-700 to-gray-600 rounded-2xl flex items-center justify-center mb-6 shadow-inner overflow-hidden">
                           <img 
-                            src="/donaciones.jpg" 
+                            src={getQRUrl()} 
                             alt="QR de donaciones Redeban" 
                             className="w-full h-full object-cover rounded-xl"
                           />
@@ -179,7 +180,7 @@ const QRDonation: React.FC = () => {
             {/* Imagen del QR */}
             <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
               <img 
-                src="/donaciones.jpg" 
+                src={getQRUrl()} 
                 alt="QR de donaciones Redeban - Vista completa" 
                 className="w-full h-auto max-h-[80vh] object-contain"
               />

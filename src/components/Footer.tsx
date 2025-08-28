@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
               <p className="text-gray-400 text-sm font-medium drop-shadow-sm">
-                © 2024 Donaciones PY. Todos los derechos reservados.
+                © 2024 ElDanissito. Todos los derechos reservados.
               </p>
             </div>
             
