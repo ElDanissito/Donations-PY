@@ -43,9 +43,9 @@ const QRDonation: React.FC = () => {
                   </span>
                 </h2>
                 <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                  Escanea el QR de Redeban para donar el monto que desees. 
+                  Escanea el QR de Redeban o usa Bre-B para donar el monto que desees.
                   <br className="hidden md:block" />
-                  Totalmente personalizable y sin restricciones de monto.
+                  Puedes donar con QR o con llaves Bre-B, sin restricciones de monto.
                 </p>
               </div>
             </ScrollAnimation>
@@ -66,11 +66,11 @@ const QRDonation: React.FC = () => {
                         <div className="w-40 h-40 bg-gradient-to-br from-gray-700 to-gray-600 rounded-2xl flex items-center justify-center mb-6 shadow-inner overflow-hidden">
                           <img 
                             src={getQRUrl()} 
-                            alt="QR de donaciones Redeban" 
+                            alt="QR de donaciones" 
                             className="w-full h-full object-cover rounded-xl"
                           />
                         </div>
-                        <p className="text-white text-lg font-semibold mb-2">QR de Redeban</p>
+                        <p className="text-white text-lg font-semibold mb-2">QR de pagos</p>
                         <p className="text-gray-400 text-sm">Escanea para donar</p>
                       </div>
                       
@@ -85,9 +85,6 @@ const QRDonation: React.FC = () => {
                   
                   {/* Información del QR */}
                   <div className="mt-8 text-center">
-                    <h3 className="text-2xl font-bold text-white mb-3">
-                      Redeban
-                    </h3>
                     <p className="text-gray-300 text-base leading-relaxed">
                       Escanea con tu app bancaria para donar de forma segura y directa
                     </p>
@@ -99,6 +96,17 @@ const QRDonation: React.FC = () => {
                       </svg>
                       <span className="text-sm font-medium">100% Seguro</span>
                     </div>
+
+                    {/* Botón Ver QR Completo debajo del preview */}
+                    <div className="mt-6">
+                      <button 
+                        className="group relative px-8 py-4 bg-gradient-to-r from-purple-500 to-purple-600 text-white font-semibold rounded-full text-lg shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30 transform hover:scale-105 transition-all duration-300 overflow-hidden"
+                        onClick={openModal}
+                      >
+                        <span className="relative z-10">Ver QR Completo</span>
+                        <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </ScrollAnimation>
@@ -107,50 +115,19 @@ const QRDonation: React.FC = () => {
               <ScrollAnimation animation="fadeInRight" delay={600}>
                 <div className="text-left space-y-8">
                   <div className="bg-gray-800/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-purple-500/20">
-                    <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
-                      <span className="w-8 h-8 bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mr-3">
-                        <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                        </svg>
-                      </span>
-                      Ventajas de Donar con Redeban
+                    <h3 className="text-2xl font-bold text-white mb-4">
+                      ¿Prefieres donar con Bre-B?
                     </h3>
-                    
-                    <ul className="space-y-4">
-                      {[
-                        'Monto personalizado a tu elección',
-                        'Transacción segura y directa',
-                        'Sin comisiones adicionales',
-                        'Confirmación inmediata',
-                        'Compatible con todas las apps bancarias'
-                      ].map((benefit, index) => (
-                        <li key={index} className="flex items-start space-x-4 group">
-                          <div className="w-6 h-6 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-green-500/30 transition-colors duration-200">
-                            <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                            </svg>
-                          </div>
-                          <span className="text-gray-300 group-hover:text-white transition-colors duration-200 font-medium">
-                            {benefit}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* CTA Mejorado */}
-                  <div className="text-center lg:text-left">
-                    <div className="bg-gradient-to-r from-purple-500/10 to-purple-600/10 rounded-2xl p-6 border border-purple-500/20">
-                      <p className="text-gray-300 mb-6 text-lg font-medium">
-                        ¿Listo para hacer tu donación personalizada?
-                      </p>
-                      <button 
-                        className="group relative px-8 py-4 bg-gradient-to-r from-purple-500 to-purple-600 text-white font-semibold rounded-full text-lg shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30 transform hover:scale-105 transition-all duration-300 overflow-hidden"
-                        onClick={openModal}
-                      >
-                        <span className="relative z-10">Ver QR Completo</span>
-                        <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      </button>
+                    <p className="text-gray-300 leading-relaxed">
+                      También puedes enviar tu donación usando llaves Bre-B. Solo ingresa la llave
+                      <span className="ml-1 font-semibold text-purple-200">@DRB371 </span>
+                       desde tu app bancaria y confirma el monto que desees.
+                    </p>
+                    <div className="inline-flex items-center space-x-2 bg-purple-500/10 text-purple-200 px-4 py-2 rounded-full mt-4 border border-purple-500/20">
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-sm font-medium">Llave: @DRB371</span>
                     </div>
                   </div>
                 </div>
@@ -188,7 +165,7 @@ const QRDonation: React.FC = () => {
             
             {/* Información adicional */}
             <div className="mt-4 text-center">
-              <p className="text-white text-lg font-medium">QR de Redeban - Escanea para donar</p>
+              <p className="text-white text-lg font-medium">QR de pagos - Escanea para donar</p>
               <p className="text-gray-300 text-sm mt-1">Haz clic fuera del modal para cerrar</p>
             </div>
           </div>

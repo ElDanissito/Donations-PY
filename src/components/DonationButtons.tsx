@@ -169,7 +169,7 @@ const DonationButtons: React.FC = () => {
             <div className="inline-flex items-center space-x-2 bg-gray-800/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg border border-purple-500/20">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               <p className="text-gray-300 text-sm font-medium">
-                Los botones redirigen a Kiire para procesar tu donación de forma segura
+                Los botones te redirigen a un sitio seguro para procesar tu transacción
               </p>
             </div>
           </div>
