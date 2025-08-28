@@ -2,7 +2,7 @@
 
 export const PROJECT_CONFIG = {
   name: 'Donaciones PY',
-  description: 'Tu Ayuda Hace la Diferencia',
+  description: 'Tu Ayuda Hace la Diferencia - Desarrollo de Drones para Trabajo de Grado',
   version: '2.0.0',
   author: 'Donaciones PY Team',
 };
@@ -61,7 +61,6 @@ export const PAYMENT_PLATFORMS = {
     features: [
       'Transacciones seguras',
       'Confirmación inmediata',
-      'Soporte 24/7',
       'Sin comisiones ocultas'
     ]
   },
@@ -81,9 +80,10 @@ export const PAYMENT_PLATFORMS = {
 
 // Información de contacto
 export const CONTACT_INFO = {
-  email: 'info@donacionespy.com',
-  phone: '+57 300 123 4567',
-  location: 'Bogotá, Colombia',
+  phone: '+57 302 865 9218',
+  location: 'Cali, Colombia',
+  university: 'Universidad del Valle',
+  program: 'Ingeniería de Sistemas',
   socialMedia: {
     twitter: { icon: '🐦', label: 'Twitter', href: '#' },
     facebook: { icon: '📘', label: 'Facebook', href: '#' },

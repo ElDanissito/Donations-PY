@@ -1,21 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Donaciones PY - Tu Ayuda Hace la Diferencia",
-  description: "Landing page para donaciones con montos fijos y personalizados. Utilizamos Kiire y Redeban para transacciones seguras y transparentes.",
-  keywords: "donaciones, ayuda, kiire, redeban, transparencia, impacto social",
+  title: "Donaciones PY - Desarrollo de Drones para Trabajo de Grado",
+  description: "Tu donación contribuye directamente a la compra de insumos para el desarrollo de drones. Apoya mi trabajo de grado y sé parte de este proyecto innovador.",
+  keywords: "donaciones, drones, trabajo de grado, desarrollo, innovación, kiire, redeban",
   authors: [{ name: "Donaciones PY" }],
 };
 
@@ -31,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="antialiased">
         {children}
       </body>
     </html>

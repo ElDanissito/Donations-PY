@@ -16,11 +16,11 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/25">
-              <span className="text-white font-bold text-xl">💝</span>
+                             <span className="text-white font-bold text-xl">🎓</span>
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold text-white leading-tight">Donaciones PY</span>
-              <span className="text-xs text-purple-300 font-medium">Tu ayuda hace la diferencia</span>
+                             <span className="text-xs text-purple-300 font-medium">Sistema de delivery con drones</span>
             </div>
           </div>
           

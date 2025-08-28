@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -15,38 +17,19 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/25">
-                <span className="text-white font-bold text-2xl">💝</span>
+                                 <span className="text-white font-bold text-2xl">🎓</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-3xl font-bold text-white leading-tight drop-shadow-sm">Donaciones PY</span>
-                <span className="text-purple-300 text-sm font-medium drop-shadow-sm">Tu ayuda hace la diferencia</span>
+                                 <span className="text-purple-300 text-sm font-medium drop-shadow-sm">Sistema de delivery automatizado con drones</span>
               </div>
             </div>
             
-            <p className="text-gray-300 mb-8 max-w-lg leading-relaxed text-lg drop-shadow-sm">
-              Trabajamos para crear un impacto positivo en la sociedad a través de 
-              donaciones transparentes y efectivas. Tu apoyo hace la diferencia.
-            </p>
-            
-            {/* Redes Sociales Mejoradas */}
-            <div className="flex space-x-4">
-              {[
-                { icon: '🐦', label: 'Twitter', href: '#' },
-                { icon: '📘', label: 'Facebook', href: '#' },
-                { icon: '📷', label: 'Instagram', href: '#' }
-              ].map((social, index) => (
-                <a 
-                  key={index}
-                  href={social.href} 
-                  className="group w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center text-white hover:bg-purple-500 hover:scale-110 transition-all duration-300 border border-white/20 hover:border-purple-400"
-                  aria-label={social.label}
-                >
-                  <span className="text-xl group-hover:scale-110 transition-transform duration-300">
-                    {social.icon}
-                  </span>
-                </a>
-              ))}
-            </div>
+                                      <p className="text-gray-300 mb-8 max-w-lg leading-relaxed text-lg drop-shadow-sm">
+               Tu donación contribuye directamente a la compra de componentes electrónicos, sensores, 
+               motores y materiales para construir drones autónomos desde cero. Apoya mi trabajo de grado 
+               en Ingeniería de Sistemas de la Universidad del Valle.
+             </p>
           </div>
 
           {/* Enlaces Rápidos Mejorados */}
@@ -61,12 +44,12 @@ const Footer: React.FC = () => {
             </h3>
             
             <ul className="space-y-3">
-              {[
-                { href: '#donaciones', label: 'Hacer Donación', icon: '💝' },
-                { href: '#sobre-nosotros', label: 'Sobre Nosotros', icon: 'ℹ️' },
-                { href: '#contacto', label: 'Contacto', icon: '📞' },
-                { href: '#', label: 'Transparencia', icon: '🔍' }
-              ].map((link, index) => (
+                             {[
+                 { href: '#donaciones', label: 'Hacer Donación', icon: '💝' },
+                 { href: '#sobre-nosotros', label: 'Sobre Nosotros', icon: 'ℹ️' },
+                 { href: 'tel:+573028659218', label: 'Contacto', icon: '📞' },
+                 { href: '#', label: 'Transparencia', icon: '🔍' }
+               ].map((link, index) => (
                 <li key={index}>
                   <a 
                     href={link.href} 
@@ -93,12 +76,11 @@ const Footer: React.FC = () => {
               Contacto
             </h3>
             
-            <ul className="space-y-4 text-gray-300">
-              {[
-                { icon: '📧', label: 'info@donacionespy.com', href: 'mailto:info@donacionespy.com' },
-                { icon: '📱', label: '+57 300 123 4567', href: 'tel:+573001234567' },
-                { icon: '📍', label: 'Bogotá, Colombia', href: '#' }
-              ].map((contact, index) => (
+                         <ul className="space-y-4 text-gray-300">
+               {[
+                 { icon: '📱', label: '+57 302 865 9218', href: 'tel:+573028659218' },
+                 { icon: '📍', label: 'Cali, Colombia', href: '#' }
+               ].map((contact, index) => (
                 <li key={index} className="flex items-center space-x-3 group">
                   <span className="text-lg group-hover:scale-110 transition-transform duration-300">
                     {contact.icon}

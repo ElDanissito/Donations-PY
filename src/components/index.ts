@@ -4,3 +4,5 @@ export { default as DonationButtons } from './DonationButtons';
 export { default as QRDonation } from './QRDonation';
 export { default as AboutSection } from './AboutSection';
 export { default as Footer } from './Footer';
+export { default as ScrollAnimation } from './ScrollAnimation';
+export { default as GraduationCat3D } from './GraduationCat3D';
