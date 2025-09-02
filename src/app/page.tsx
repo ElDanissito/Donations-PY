@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import ProgressBar from '@/components/ProgressBar';
 import DonationButtons from '@/components/DonationButtons';
 import QRDonation from '@/components/QRDonation';
 import AboutSection from '@/components/AboutSection';
@@ -13,6 +14,7 @@ export default function Home() {
       <ThanksModal />
       <Header />
       <Hero />
+      <ProgressBar />
       <DonationButtons />
       <QRDonation />
       <AboutSection />
