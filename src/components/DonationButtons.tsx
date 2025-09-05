@@ -10,11 +10,11 @@ const DonationButtons: React.FC = () => {
     { 
       amount: 10000, 
       label: '10,000 COP', 
-      color: 'from-green-500 to-green-600',
-      bgColor: 'bg-green-500',
-      shadowColor: 'shadow-green-500/25',
-      description: 'Donación Básica',
-      icon: '💚'
+      color: 'from-purple-400 to-purple-500',
+      bgColor: 'bg-purple-400',
+      shadowColor: 'shadow-purple-400/25',
+      description: 'Gracias por Aportar',
+      icon: '🤍'
     },
     { 
       amount: 20000, 
@@ -22,7 +22,7 @@ const DonationButtons: React.FC = () => {
       color: 'from-purple-500 to-purple-600',
       bgColor: 'bg-purple-500',
       shadowColor: 'shadow-purple-500/25',
-      description: 'Donación Estándar',
+      description: 'Gracias por Soñar Conmigo',
       icon: '💜'
     },
     { 
@@ -31,8 +31,8 @@ const DonationButtons: React.FC = () => {
       color: 'from-purple-600 to-purple-700',
       bgColor: 'bg-purple-600',
       shadowColor: 'shadow-purple-600/25',
-      description: 'Donación Generosa',
-      icon: '💖'
+      description: 'Gracias por Tu Generosidad',
+      icon: '❤️'
     },
     { 
       amount: 100000, 
@@ -40,7 +40,7 @@ const DonationButtons: React.FC = () => {
       color: 'from-purple-700 to-purple-800',
       bgColor: 'bg-purple-700',
       shadowColor: 'shadow-purple-700/25',
-      description: 'Donación Premium',
+      description: 'Gracias por Creer en el Proyecto',
       icon: '💎'
     }
   ];

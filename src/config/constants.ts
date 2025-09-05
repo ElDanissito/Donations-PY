@@ -15,7 +15,7 @@ export const DONATION_AMOUNTS = [
     color: 'from-success-500 to-success-600',
     bgColor: 'bg-success-500',
     shadowColor: 'shadow-success-500/25',
-    description: 'Donación Básica',
+    description: 'Un Granito de Arena',
     icon: '💚',
     category: 'basic'
   },
@@ -25,7 +25,7 @@ export const DONATION_AMOUNTS = [
     color: 'from-primary-500 to-primary-600',
     bgColor: 'bg-primary-500',
     shadowColor: 'shadow-primary-500/25',
-    description: 'Donación Estándar',
+    description: 'Una Mano Amiga',
     icon: '💙',
     category: 'standard'
   },
@@ -35,7 +35,7 @@ export const DONATION_AMOUNTS = [
     color: 'from-secondary-500 to-secondary-600',
     bgColor: 'bg-secondary-500',
     shadowColor: 'shadow-secondary-500/25',
-    description: 'Donación Generosa',
+    description: 'Un Corazón Solidario',
     icon: '💜',
     category: 'generous'
   },
@@ -45,7 +45,7 @@ export const DONATION_AMOUNTS = [
     color: 'from-warning-500 to-warning-600',
     bgColor: 'bg-warning-500',
     shadowColor: 'shadow-warning-500/25',
-    description: 'Donación Premium',
+    description: 'Un Sueño Hecho Posible',
     icon: '🧡',
     category: 'premium'
   }
